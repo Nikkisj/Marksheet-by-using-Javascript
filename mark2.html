@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>Marksheet</title>
+        <link rel="stylesheet" href="mark2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="mark2.js"></script>
+    </head>
+    <body>
+        <form action="" class="mainform" name="validform" onsubmit="return myFunction()">
+        <div class="heading1" id="heading">
+            <img id="image" class="center" src="im/m1.png" alt="College Logo">
+            <p><strong>UNIVERSITY OF MUMBAI <br>GRADE CARD</strong></p>
+            <p><strong>Statement of Grade <br>Sceme Information Technology Engineering</strong></p>
+            
+        </div>
+        <hr>
+        <div class="formhead">
+            <form id="formhead1" action="" >
+                <fieldset class="feild1">
+                <p id="gradehead" align="center"><u>Marksheet </u></p>
+                <table class="Userinput" align="center">
+                    <tr>
+                        <td><strong>Name:</strong></td>
+                        <td><input type="text" name="txtname" placeholder="Enter Name"></td>
+                    </tr>
+					
+					<tr>
+                        <td><strong>PRN:</strong></td>
+                        <td><input type="tel" name="txtPrn" placeholder="PRN"></td>
+                    </tr>
+					<tr>
+                        <td><strong>College:</strong></td>
+                        <td><input type="text" name="txtCollege" placeholder="College Name"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Semester:</strong></td>
+                        <td><input type="text" name="txtSemester" placeholder="semester"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Branch:</strong></td>
+                        <td><input type="text" name="txtBranch" placeholder="Branch Name"></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Seat Number:</strong></td>
+                        <td><input type="tel" name="txtSeat" placeholder="Enter Seatnumber"></td>
+                    </tr>
+                </table>
+            <br><br>
+                
+                    <table border="2" cellspacing="0" class="markinput" align="center" style= "background-color:#ffd3b6;">
+                        <tr style= "background-color:#ebb7b9;">
+                           <th >Course-Code</th>
+                           <th width="400">Course-Title</th>
+                           <th >UT-I(20)</th>
+                           <th>UT-II(20)</th>
+                           <th>Marks(80)</th>
+                        </tr>
+                        <tr>
+                            <td><b>ITC301</b></td>
+                            <td><b>E-Business</b></td>
+                            <td height="25"><input height="" type="text" name="ebu1" maxlength="2" size="10"></td>   
+                            <td height="25"><input  type="text" name="ebu2" maxlength="2" size="10"></td>   
+                            <td height="25"><input  type="text" name="ebfinal" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td><b>ITC302</b></td>
+                            <td><b>Internet Programming</b></td>
+                            <td><input type="text" name="Ipu1" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Ipu2" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Ipfinal" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td><b>ITC303</b></td>
+                            <td><b>Software Engineering</b></td>
+                            <td><input type="text" name="Seu1" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Seu2" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Sefinal" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td><b>ITC304</b></td>
+                            <td><b>Advanced Management Technology</b></td>
+                            <td><input type="text" name="Mtu1" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Mtu2" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Mtfinal" maxlength="2" size="10"></td>   
+                        </tr>
+                        <tr>
+                            <td><b>ITC305</b></td>
+                            <td><b>Computer Security</b></td>
+                            <td><input type="text" name="Cnu1" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Cnu2" maxlength="2" size="10"></td>   
+                            <td><input type="text" name="Cnfinal" maxlength="2" size="10"></td>   
+                        </tr>
+                    </table>
+					
+					<br>
+                <div class="btn" align="center"  >
+                    <button type="button" onclick='myFunction()' align="center" >Submit</button>
+                    <button type="Reset" align="center">Reset</button>
+                </div>
+				<br><br>
+                </fieldset>
+				<br><br>
+                <fieldset class="feild3" align="center">
+                    <table border="2" cellspacing="0" class="feild3table" align="center" style= "background-color:#fb9f9f;" >
+                        <th colspan="7" id="studentinfo"  align="center" style= "background-color:#f0dcdf;" ><Strong>Student Information</Strong></th>
+                        <tr>
+                            <td><Strong>Name</Strong></td>
+                            <td width="500" colspan="6"><font id="name"></font></td>
+                        </tr>
+						 <tr>
+                            <td><Strong>PRN</Strong></td>
+                            <td colspan="6"><font id="prn"></font></td>
+                        </tr>
+						<tr>
+                            <td><Strong>College</Strong></td>
+                            <td width="500" colspan="6"><font id="college"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Semester</Strong></td>
+                            <td colspan="6"><font id="sem"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Branch</Strong></td>
+                            <td colspan="6"><font id="branch"></font></td>
+                        </tr>
+                        <tr>
+                            <td><Strong>Seatnumber</Strong></td>
+                            <td colspan="6"><font id="seat"></font></td>
+                        </tr>
+                     
+                        <th colspan="7" id="submarks" align="center" style= "background-color:#f0dcdf;"><Strong>Subjects Marks</Strong></th>
+                        <tr style= "background-color:#ebb7b9;">
+                            <th><Strong>Course Code:</Strong></th>
+                            <th><strong>Subjects:</strong></th>
+                            <th><strong >UT-I</strong></th>
+                            <th width="50"><strong>UT-II</strong></th>
+                            <th width="50">Final Exam</th>
+                            <th width="50">Total(100)</th>
+                            <th>Grade</th>
+                        </tr>
+                        <tr>
+                            <td><strong>ITC301</strong></td>
+                            <td><strong>E-Business</strong></td>
+                            <td><font id="u1eb"></font></td>
+                            <td><font id="u2eb"></font></td>
+                            <td><font id="finaleb"></font></td>
+                            <td><font id="totaleb"></font></td>
+                            <td><font id="gradeeb"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITC302</strong></td>
+                            <td><strong>Internet Programming</strong></td>
+                            <td><font id="u1ip"></font></td>
+                            <td><font id="u2ip"></font></td>
+                            <td><font id="finalip"></font></td>
+                            <td><font id="totalip"></font></td>
+                            <td><font id="gradeip"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITC303</strong></td>
+                            <td><strong>Software Engineering</strong></td>
+                            <td><font id="u1se"></font></td>
+                            <td><font id="u2se"></font></td>
+                            <td><font id="finalse"></font></td>
+                            <td><font id="totalse"></font></td>
+                            <td><font id="gradese"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITC304</strong></td>
+                            <td><strong>Management Technology</strong></td>
+                            <td><font id="u1mt"></font></td>
+                            <td><font id="u2mt"></font></td>
+                            <td><font id="finalmt"></font></td>
+                            <td><font id="totalmt"></font></td>
+                            <td><font id="grademt"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>ITC305</strong></td>
+                            <td><strong>Computer Security</strong></td>
+                            <td><font id="u1cns"></font></td>
+                            <td><font id="u2cns"></font></td>
+                            <td><font id="finalcns"></font></td>
+                            <td><font id="totalcns"></font></td>
+                            <td><font id="gradecns"></font></td>
+                        </tr>
+                        <th colspan="7" ID="subtotal" align="center" style= "background-color:#f0dcdf;"><strong>Marks Total</strong></th>
+                        <tr>
+                            <td><strong>Total(500)</strong></td>
+                            <td colspan="6"><font id="total"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Percentage</strong></td>
+                            <td colspan="6"><font id="percentage"></font></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Grade</strong></td>
+                            <td colspan="6"><font id="grade"></font></td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+				<br><br><br><br><br>
+				<div class="n2">
+	<p align="left" ><strong>Statement No.123457<br> Date:16 Sept 2022</strong></p>
+	</div>
+				<div class="n1">
+	<p align="right"><strong>Director<br> Board of Examination and Evaluation</strong></p>
+	</div>
+            </form>
+        </div>
+		
+    </form>
+	<br>
+	
+    </body>
+    
+</html>

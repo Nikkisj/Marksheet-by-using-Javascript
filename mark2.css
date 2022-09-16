@@ -1,0 +1,107 @@
+body{
+    margin: 100px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
+  }
+  .heading1{
+    background-color: #D1F2EB;
+  }
+ .heading1 p {
+    color: #7B241C;
+	
+    text-align: center;
+    /* font-family: 'IM Fell English', serif; */
+    font-family: 'Poppins', 'sans-serif', Dela Gothic One rev=1;
+    font-size: 25px;
+    
+}
+
+body form{
+   
+    /* padding: 10px 25px; */
+    border: 3px solid black;
+    /* border-color: black; */
+    /* margin: 20px; */
+    background-color: #E8DAEF;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 50px;
+}
+body .formhead{
+    align-items: center;
+}
+
+.formhead input{
+    /* width: 300px; */
+    height: 25px;
+    border-radius: 3px;
+    border-color: black;
+}
+.feild1 #gradehead{
+    color: #5d23d4;
+   font-size: 30px;
+   
+   
+}
+body .userinput{
+    /* padding-left: 30px; */
+    /* width: 400px; */
+    height: 50;
+	background-color:#ffd3b6;
+}
+.userinput input{
+    width: 660px;
+    height: 33px;
+    background-color: #FDEBD0;
+}
+.markinput input{
+   
+    background-color: #FDEBD0;
+}
+.feild1{
+    background-color: #CCD1D1;
+    margin-bottom: 5px;
+    padding: 25px;
+   
+}
+.feild2{
+    background-color:#FDEBD0;
+    margin-bottom: 5px;
+    padding: 25px;
+}
+.feild3{
+    background-color:  #ffb7cb;
+    padding: 25px;
+    width: 98%;
+	
+    
+}
+.feild3table{
+    width: 70%;
+	
+}
+.feild3 #studentinfo{
+    color: #f40a0a;
+    font-size: 25px;
+}
+.feild3 #submarks{
+    color: #f40a0a;
+    font-size: 25px;
+}
+.feild3 #subtotal{
+    color: #f40a0a;
+    font-size: 25px;
+}
+
+
+.btn{
+    position: center;
+   color:blue;
+   
+}
+table{
+text-align:center;}
